@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabylonML Showcase</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.8rem;
+            background-color: #ecf0f1;
+            padding: 0.8rem 1rem;
+            border-radius: 4px;
+        }
+        li a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        li a:hover {
+            text-decoration: underline;
+        }
+        li span {
+            display: block;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 0.2rem;
+        }
+        code {
+            background-color: #eee;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BabylonML Showcase</h1>
+            <p>Examples demonstrating the capabilities of the BabylonML library.</p>
+        </header>
+
+        <section id="about">
+            <h2>What is BabylonML?</h2>
+            <p>
+                BabylonML is a declarative, markup-based framework (similar to A-Frame or HTML) for building 3D scenes using Babylon.js. It aims to simplify the process of creating and managing Babylon.js scenes by abstracting away boilerplate code and providing a component-based architecture.
+            </p>
+            <p><strong>Core Goals:</strong></p>
+            <ul>
+                <li><strong>Declarative Syntax:</strong> Define scenes, entities, and components using an HTML-like markup language.</li>
+                <li><strong>Component-Based Architecture:</strong> Attach reusable behaviors and properties (components) to entities.</li>
+                <li><strong>Extensibility:</strong> Enable the creation and registration of custom components and primitives.</li>
+                <li><strong>Babylon.js Integration:</strong> Leverage the power and features of the Babylon.js engine.</li>
+                <li><strong>Ease of Use:</strong> Provide a simpler entry point for web developers.</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Click the links below to view the live examples. These examples load the BabylonML library from <code>https://tinyurl.com/babylonml</code>.</p>
+            <ul>
+                <li>
+                    <a href="./examples/basic_scene.html" target="_blank">Basic Scene</a>
+                    <span>Demonstrates a simple scene with a box, ground, and default camera/light. Includes dynamic material update via JavaScript.</span>
+                </li>
+                <li>
+                    <a href="./examples/explicit_camera_light_placeholder.html" target="_blank">Explicit Camera & Light Placeholder</a>
+                    <span>Shows how defining an explicit camera overrides the default, and how the (currently non-functional) <code>light</code> attribute placeholder prevents the default light.</span>
+                </li>
+                 <li>
+                    <a href="./examples/multi_camera_scene.html" target="_blank">Multiple Cameras</a>
+                    <span>Illustrates defining multiple cameras and switching between them using JavaScript.</span>
+                </li>
+                 <li>
+                    <a href="./examples/mesh_example.html" target="_blank">Mesh Loading (GLB)</a>
+                    <span>Shows how to load an external <code>.glb</code> model using the <code>geometry</code> component.</span>
+                </li>
+                 <li>
+                    <a href="./examples/photodome_example.html" target="_blank">Photo Dome</a>
+                    <span>Demonstrates creating a 360-degree photo environment using the <code>geometry</code> component.</span>
+                </li>
+                 <li>
+                    <a href="./examples/videodome_example.html" target="_blank">Video Dome</a>
+                    <span>Demonstrates creating a 360-degree video environment using the <code>geometry</code> component, including custom zoom interaction.</span>
+                </li>
+                 <li>
+                    <a href="./examples/vr_scene.html" target="_blank">VR Scene</a>
+                    <span>Shows how to enable a basic VR experience using the <code>xr="vr"</code> attribute on <code><bml-scene></code>.</span>
+                </li>
+                 <li>
+                    <a href="./examples/ar_scene.html" target="_blank">AR Scene</a>
+                    <span>Shows how to enable a basic AR experience using the <code>xr="ar"</code> attribute on <code><bml-scene></code> (requires compatible device/browser).</span>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>BabylonML Frontend Showcase</p>
+            <!-- Add link to main library repo here later -->
+        </footer>
+    </div>
+</body>
+</html>
